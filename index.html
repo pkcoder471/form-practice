@@ -8,65 +8,80 @@
     <title>Document</title>
   </head>
   <body>
-    <main>
+    <main class="flex justify-center">
       <div class="container bg-blue-700 w-[60%] flex justify-center">
         <form
           action=""
           method="POST"
-          class="w-[60%] h-80 flex flex-wrap items-center justify-between"
+          class="w-[60%] h-96 flex flex-wrap items-center justify-between"
         >
           <div class="w-[50%]">
             <label for="first-name" class="text-white">First Name</label>
-            <input
-              type="text"
-              name="first-name"
-              id="first-name"
-              required
-              class=" w-[90%] border-black h-8"
-            />
+            <div class="border-b-2 w-[90%]">
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                required
+                class="w-[90%] h-8 bg-blue-700 text-white focus:outline-none"
+              />
+            </div>
           </div>
           <div class="w-[50%]">
             <label for="last-name" class="text-white">Last Name</label>
-
-            <input
-              type="text"
-              name="last-name"
-              id="last-name"
-              required
-              class="w-[100%] h-8 bg-blue-700  text-white border-none border-b-2 border-b-black focus:outline-none "
-            />
+            <div class="border-b-2 w-[100%]">
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                required
+                class="w-[100%] h-8 bg-blue-700 text-white focus:outline-none"
+              />
+            </div>
           </div>
           <div class="w-[100%]">
             <label for="Email" class="block text-white">Email id</label>
-
-            <input
-              type="email"
-              name="Email"
-              id="Email"
-              required
-              class="w-[100%] border-black h-8"
-            />
+            <div class="border-b-2">
+              <input
+                type="email"
+                name="Email"
+                id="Email"
+                required
+                class="w-[100%] bg-blue-700 text-white focus:outline-none h-8"
+              />
+            </div>
           </div>
           <div class="w-[100%]">
             <label for="password" class="block text-white">Password</label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              required
-              class="w-[100%] border-black h-8"
-            />
+            <div class="border-b-2">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                required
+                class="w-[100%] bg-blue-700 text-white focus:outline-none h-8"
+              />
+            </div>
           </div>
-          <div class="w-[100%] ">
-            <label for="cpassword" class="block text-white">Confirm Password</label>
-            <input
-              type="password"
-              name="cpassword"
-              id="cpassword"
-              required
-              class="w-[100%] border-black h-8"
-            />
+          <div class="w-[100%]">
+            <label for="cpassword" class="block text-white"
+              >Confirm Password</label
+            >
+            <div class="border-b-2">
+              <input
+                type="password"
+                name="cpassword"
+                id="cpassword"
+                required
+                class="w-[100%] bg-blue-700 text-white focus:outline-none h-8"
+              />
+            </div>
           </div>
+
+          <div class="w-[100%] flex my-4 justify-center">
+            <button class="border-2 border-white p-2 text-white hover:bg-white hover:text-blue-700 hover:border-blue-700 font-semibold ">Submit</button>
+          </div>
+
         </form>
       </div>
     </main>
